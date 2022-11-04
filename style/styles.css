@@ -13,3 +13,53 @@ body{
     font-size: 15px;
     font-family: Inter;
 }
+
+.container{
+    width:95%;
+    margin:0;
+}
+
+header{
+    margin: 0rem 1rem 0rem 0;
+}
+
+.logo{
+
+}
+
+.mainImg{
+    width: 100%;
+    margin: 0rem 1rem 2rem 0;
+}
+
+h1{
+    font-weight: 800;
+    margin: 2rem 1rem 2rem 0;
+   
+}
+
+.subHeader{
+    margin: 2rem 1rem 2rem 0;
+}
+
+.readBtn{
+    margin: 2rem 1rem 2rem 0;
+    padding: 0.5rem 2.5rem;
+    font-style: 16px;
+    color: #fff;
+    background-color: var(--softRed);
+    border:0;
+}
+
+.new{
+    background-color: var(--veryDarkBlue);
+    padding:.75rem;
+    color: var(--offWhite);
+}
+
+h2{
+    color:var(--softOrange);
+    font-weight: 600;
+}
+
+
