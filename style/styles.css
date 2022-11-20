@@ -1,8 +1,8 @@
 :root{
   --softOrange: hsl(35, 77%, 62%);
   --softRed: hsl(5, 85%, 63%);
-  --offWhite: hsl(36, 100%, 99%);
-  --grayishBlue: hsl(233, 8%, 79%);
+  --offWhite: hsl(36, 6%, 85%);
+  --grayishBlue: hsl(228, 5%, 61%);
   --darkGrayishBlue: hsl(236, 13%, 42%);
   --veryDarkBlue: hsl(240, 100%, 5%);
 }
@@ -11,35 +11,39 @@ body{
     width: 100vw;
     height: 100vh;
     font-size: 15px;
-    font-family: Inter;
+    font-family: "Inter";
 }
 
 .container{
     width:95%;
-    margin:0;
+    margin-bottom: 2rem;
 }
 
 header{
     margin: 0rem 1rem 0rem 0;
 }
 
-.logo{
+.imgBox{
+    margin: 2rem 1rem 2rem 1rem;
+}
 
+main{
+    margin-bottom: 2rem;
 }
 
 .mainImg{
     width: 100%;
-    margin: 0rem 1rem 2rem 0;
-}
-
-h1{
-    font-weight: 800;
-    margin: 2rem 1rem 2rem 0;
-   
 }
 
 .subHeader{
-    margin: 2rem 1rem 2rem 0;
+    font-weight:800;
+    margin: 2rem 1rem 2rem 1rem;
+   
+}
+
+.subText{
+    margin: 2rem 1rem 2rem 1rem;
+
 }
 
 .readBtn{
@@ -51,15 +55,50 @@ h1{
     border:0;
 }
 
-.new{
+.articles{
     background-color: var(--veryDarkBlue);
-    padding:.75rem;
+    padding: 1.75rem;
     color: var(--offWhite);
+    margin: 2rem 1rem 2rem 1rem;
+    
 }
 
-h2{
+.articleHead{
+    font-size: 1.5rem;
+    font-weight:700;
+}
+.new{
+    margin-bottom: 2rem;
     color:var(--softOrange);
     font-weight: 600;
 }
 
+.newArticle{
+    letter-spacing: .10rem;
+}
 
+section{
+    margin: 2rem 1rem 5rem 1rem;
+    padding-bottom: 5rem;
+}
+
+.number{
+    font-size: 2rem;
+    font-weight: 700;
+    color:var(--grayishBlue);
+}
+
+.blueHead{
+    color:var(--veryDarkBlue);
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.articleText{
+    color:var(--grayishBlue);
+    font-size: 1.25rem;
+}
+
+.deadspace{
+    margin-bottom: 10rem;
+}
