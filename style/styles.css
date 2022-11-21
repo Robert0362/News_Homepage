@@ -14,21 +14,12 @@ body{
     font-family: "Inter";
 }
 
-.container{
-    width:95%;
-    margin-bottom: 2rem;
-}
-
 header{
-    margin: 0rem 1rem 0rem 0;
+    margin: 0rem 1rem 0rem 0rem;
 }
 
 .imgBox{
-    margin: 2rem 1rem 2rem 1rem;
-}
-
-main{
-    margin-bottom: 2rem;
+    margin: 2rem 1rem 2rem 1.5rem;
 }
 
 .mainImg{
@@ -37,40 +28,40 @@ main{
 
 .subHeader{
     font-weight:800;
-    margin: 2rem 1rem 2rem 1rem;
-   
+    margin: 2rem 1rem 2rem 1.5rem;
 }
 
 .subText{
-    margin: 2rem 1rem 2rem 1rem;
-
+    margin: 2rem 1rem 2rem 1.5rem;
 }
 
 .readBtn{
-    margin: 2rem 1rem 2rem 0;
-    padding: 0.5rem 2.5rem;
-    font-style: 16px;
+    margin: 1rem 1rem 2rem 0;
+    padding: 1rem 2.5rem;
+    font-style: 18px;
+    font-weight: 700;
     color: #fff;
     background-color: var(--softRed);
     border:0;
+    letter-spacing: .25rem;
 }
 
 .articles{
     background-color: var(--veryDarkBlue);
     padding: 1.75rem;
     color: var(--offWhite);
-    margin: 2rem 1rem 2rem 1rem;
-    
+    margin: 2rem 1rem 2rem 1.5rem;  
+}
+
+.new{
+    margin-bottom: 2rem;
+    color:var(--softOrange);
+    font-weight: 600;
 }
 
 .articleHead{
     font-size: 1.5rem;
     font-weight:700;
-}
-.new{
-    margin-bottom: 2rem;
-    color:var(--softOrange);
-    font-weight: 600;
 }
 
 .newArticle{
@@ -78,27 +69,65 @@ main{
 }
 
 section{
-    margin: 2rem 1rem 5rem 1rem;
+    margin: 2rem 0rem 2rem 0.75rem;
     padding-bottom: 5rem;
 }
 
+/* GRID */
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "image numb"
+    "image head"
+    "image txt";
+    margin:.5rem .25rem 2rem 0;
+    column-gap: 1rem;
+    row-gap: 1rem
+    ;
+}
+
+.gridImg{
+    grid-area: image;
+    justify-self: start;
+    margin: 0px;
+}
+
 .number{
+    grid-area: numb;
+    margin: 0px;
+    justify-self: start;
+    align-self: start;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     color:var(--grayishBlue);
 }
 
 .blueHead{
+    grid-area: head;
+    margin: 0px;
+    justify-self: start;
+    align-self: start;
     color:var(--veryDarkBlue);
     font-weight: 800;
-    font-size: 1.5rem;
-}
-
-.articleText{
-    color:var(--grayishBlue);
     font-size: 1.25rem;
 }
 
-.deadspace{
-    margin-bottom: 10rem;
+.articleText{
+    grid-area: txt;
+    margin: 0px;
+    justify-self: start;
+    align-self: start;
+    color:var(--grayishBlue);
+    font-size: 1.0rem;
+    font-weight: 700;
 }
+
+
+
+
+
+
+
+
