@@ -77,14 +77,12 @@ section{
 article{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas: 
     "image numb"
     "image head"
     "image txt";
     margin:.5rem .25rem 2rem 0;
-    column-gap: 1rem;
-    row-gap: 1rem
     ;
 }
 
@@ -92,14 +90,15 @@ article{
     grid-area: image;
     justify-self: start;
     margin: 0px;
+    margin:.15rem .25rem 0rem 0rem;
 }
 
 .number{
     grid-area: numb;
-    margin: 0px;
+    margin: 0rem;
     justify-self: start;
     align-self: start;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 800;
     color:var(--grayishBlue);
 }
@@ -111,7 +110,7 @@ article{
     align-self: start;
     color:var(--veryDarkBlue);
     font-weight: 800;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .articleText{
@@ -124,7 +123,33 @@ article{
     font-weight: 700;
 }
 
+@media (min-width:1000px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "image image new"
+        "subHead subText new"
+        "grid";
+        margin:.5rem .25rem 2rem 0;
 
+    }
+
+    .imgBox{
+        grid-area: image;
+    }
+
+    .subHeader{
+        grid-area: subHead;
+    }
+
+    .articles{
+        grid-area: new;
+    }
+
+
+}
 
 
 
